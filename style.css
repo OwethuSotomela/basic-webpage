@@ -1,0 +1,141 @@
+*{
+    margin: 0; 
+    padding: 0; 
+}
+
+
+.containerAll{
+    font-family: arial;
+    background-color: lightseagreen;
+    height: auto;
+    width: auto;
+}
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/**header***/
+.containerMe{
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    }
+.myProfile{
+    padding: 10px 10px;
+    flex-basis: 20%;
+}
+/****header end****/
+
+
+/****city****/
+.containerCity{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  }
+.cityName{
+  padding-bottom: 20px;
+  text-align: left;
+  } 
+.cityTI{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: flex-end;
+}
+.cityImage{
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+/****city end****/
+
+
+/****foreign language****/
+.containerFL{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.language{
+  text-align: left;
+  padding-bottom: 20px;
+}
+.lang{
+  text-align: center;
+  padding: 20px;
+}
+ table,
+ th,td, tr{
+  border: 1px solid black;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.t{
+  width: 100%;
+  }
+/****foreign language end****/
+
+
+/****historic places****/
+
+.containerHP{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+}
+.hist{
+  text-align: left;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.hisPlace{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.place1{
+  display: flex;
+  padding-left: 10px;
+}
+.castlePic{
+  display: flex;
+}
+.musePic{
+  display: flex;;
+}
+.streetPic{
+  display: flex;
+}
+h3{
+  text-align: center;
+}
+
+@media (max-width: 320px){
+    .containerMe {
+      display: flex;
+      flex-direction: column;
+    }
+    .cityTI {
+flex-direction: column;
+    }
+    .hisPlace{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+/****historic places end****/
