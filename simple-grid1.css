@@ -50,8 +50,19 @@ table.t{
 /*Historic places*/
 
 
+.musePic{
+float: right;
+margin: auto;
+}
+.castlePic{
+  float:left;
+  margin: auto;
 
-
+}
+.streetPic{
+float:right;
+margin: auto;
+}
 /*Historic places end*/
 @media (max-width: 320px){
   .containerAll {
