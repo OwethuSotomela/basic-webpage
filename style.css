@@ -131,11 +131,23 @@ h3{
       flex-direction: column;
     }
     .cityTI {
-flex-direction: column;
+      flex-direction: column;
     }
     .hisPlace{
       display: flex;
+      flex-direction:column;
+    }
+    .castlePic{
+      display: flex; 
+      flex-direction:column-reverse;
+    }
+    .musePic{
+      display: flex;
       flex-direction: column;
+    }
+    .streetPic{
+      display: flex;
+      width: 50%;
     }
   }
 /****historic places end****/

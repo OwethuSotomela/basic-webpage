@@ -1,179 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
-    <style>
-        *{
-    margin: 0; 
-    padding: 0; 
-}
+    <title>Document</title>
+    <link rel="stylesheet" href="./Simple-grid/grid/simple-grid.css">
+    <link rel="stylesheet" href="./simple-grid1.css">
 
-
-.containerAll{
-    font-family: arial;
-    background-color: lightseagreen;
-    height: auto;
-    width: auto;
-}
-h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-/**header***/
-.containerMe{
-    padding-top: 10px;
-    padding-bottom:10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    }
-.myProfile{
-    padding: 10px 10px;
-    flex-basis: 20%;
-}
-/****header end****/
-
-
-/****city****/
-.containerCity{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  }
-.cityName{
-  padding-bottom: 20px;
-  text-align: left;
-  } 
-.cityTI{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: flex-end;
-}
-.cityImage{
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  }
-/****city end****/
-
-
-/****foreign language****/
-.containerFL{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.language{
-  text-align: left;
-  padding-bottom: 20px;
-}
-.lang{
-  text-align: center;
-  padding: 20px;
-}
- table,
- th,td, tr{
-  border: 1px solid black;
-  text-align: left;
-  border-collapse: collapse;
-}
-table.t{
-  width: 100%;
-  }
-/****foreign language end****/
-
-
-/****historic places****/
-
-.containerHP{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
- 
-}
-.hist{
-  text-align: left;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-.hisPlace{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-
-.place1{
-  display: flex;
-  padding-left: 10px;
-}
-.castlePic{
-  display: flex;
-}
-.musePic{
-  display: flex;;
-}
-.streetPic{
-  display: flex;
-}
-h3{
-  text-align: center;
-}
-
-@media (max-width: 320px){
-    .containerMe {
-      display: flex;
-      flex-direction: column;
-    }
-    .cityTI {
-      flex-direction: column;
-    }
-    .hisPlace{
-      display: flex;
-      flex-direction:column;
-    }
-    .castlePic{
-      display: flex; 
-      flex-direction:column-reverse;
-    }
-    .musePic{
-      display: flex;
-      flex-direction: column;
-    }
-    .streetPic{
-      display: flex;
-      width: 50%;
-    }
-  }
-/****historic places end****/
-    </style>
 </head>
-
 <body>
     <div class="containerAll">
         <!--header-->
-        <div class="containerMe">
-            <div class="fullName">
+        <div class="row containerMe">
+            <div class="col-4 fullName">
                 <h1>Owethu Sotomela</h1>
             </div>
 
 
-            <div class="myProfile">
+            <div class="col-8 myProfile">
                 <img src="Images/Table Mountain.jpg" alt="myimage with Table Mountain" width=200px lenght=>
             </div>
         </div>
@@ -184,16 +29,16 @@ h3{
 
         <!--city-->
 
-        <div class="containerCity">
+        <div class="row containerCity">
 
             <div class="cityName">
                 <h2>Which City</h2>
             </div>
             <div class="cityTI">
-                <div class="cityImage">
-                    <img src="Images/NYC1.jpeg" alt="cityimage" width=200px; class="img1">
+                <div class="col-6 cityImage">
+                    <img src="Images/NYC1.jpeg" alt="city image" width=200px; class="img1">
                 </div>
-                <div class="cText">
+                <div class="col-6 cText">
                     <p> I would love to visit <b>New York</b> because it's a place where brains and
                         bodies in indecent proximity to one
                         another create the sparks of genius, invention, progress.
@@ -205,19 +50,16 @@ h3{
                         or just kick back and people-watch.</p>
                 </div>
             </div>
-
-
-
         </div>
         <!--city end-->
 
         <!----foreign language-->
 
-        <div class="containerFL">
-            <div class="lang">
+        <div class="row containerFL">
+            <div class="col-12 lang">
                 <div class="language">
                     <h2>Foreign Language</h2>
-                </div>
+                
                 <p> I would love learn <b>Portuguese</b> because it is the sixth widely
                     spoken language in the world, it is the official language in eight
                     countries and there is a swelling demand for
@@ -225,10 +67,13 @@ h3{
                     such as accounts, technology, technical support,
                     finance, exports, tourism and education.
                 </p>
+                </div>
             </div>
+        </div>
 
-            <div class="table">
-                <table class="t">
+
+            <div class="row table">
+                <table class="col-12 t">
                     <tr>
                         <th>English</th>
                         <th>Portuguese</th>
@@ -251,20 +96,20 @@ h3{
                     </tr>
                 </table>
             </div>
-        </div>
+        
 
 
         <!----foreign language end-->
 
         <!--Historic Places-->
 
-        <div class="containerHP">
+        <div class="row containerHP">
             <div class="hist">
                 <h2>Historic Places</h2>
             </div>
             <div class="hisPlace">
 
-                <div class="hope">
+                <div class="col-4 hope">
                     <div class="place1">
 
                         <div class="gHope">
@@ -287,7 +132,7 @@ h3{
                 </div>
 
 
-                <div class="iziko">
+                <div class="col-4 iziko">
                     <div class="place1">
                         <div class="iMuse">
                             <h3>Iziko Museum</h3>
@@ -305,11 +150,10 @@ h3{
                                 alt="My image at Iziko Museum" width=200px height="200px">
                         </div>
                     </div>
-
                 </div>
 
 
-                <div class="long">
+                <div class="col-4 long">
 
                     <div class="place1">
                         <div class="lStreet">
@@ -329,11 +173,8 @@ h3{
                 </div>
             </div>
         </div>
-    </div>
-    <!--Historic Places end-->
+    </div> 
+<!--Historic Places end-->
     </div>
 </body>
-
-</body>
-
 </html>

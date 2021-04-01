@@ -1,0 +1,67 @@
+*
+/****Container all***/
+.containerAll{
+  font-family: arial;
+  background-color: lightseagreen;
+  height: auto;
+  width: auto;
+}
+h1{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*containerAll end*/
+
+/*containerMe*/
+.containerMe{
+  text-align: center;
+}
+/*containerMe end*/
+
+
+/*City*/
+.containerCity{
+  display: block;
+}
+/*City end*/
+
+
+/*Foreign language*/
+.language{
+  text-align: center;
+}
+.lang{
+  text-align: center;
+}
+table,
+ th,td, tr{
+  border: 1px solid black;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.t{
+  width: 100%;
+  }
+/*Foreign language end*/
+
+
+/*Historic places*/
+
+
+
+
+/*Historic places end*/
+@media (max-width: 320px){
+  .containerAll {
+    display: flex;
+    flex-direction: column;
+  }
+  .hisplace{
+    display:block;
+  }
+  .musPic img{
+    float: right;
+  }
+}
