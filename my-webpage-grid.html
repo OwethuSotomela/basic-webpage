@@ -4,23 +4,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple-grid</title>
     <link rel="stylesheet" href="./Simple-grid/grid/simple-grid.css">
     <link rel="stylesheet" href="./simple-grid1.css">
+    <style>
+        *
+/****Container all***/
+.containerAll{
+  font-family: arial;
+  background-color: lightseagreen;
+  height: auto;
+  width: auto;
+}
+h1{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+/*containerAll end*/
+
+/*containerMe*/
+.containerMe{
+  text-align: center;
+}
+/*containerMe end*/
+
+
+/*City*/
+.containerCity{
+  display: block;
+}
+.img1{
+  padding-top: 20px;
+}
+/*City end*/
+
+
+/*Foreign language*/
+.language{
+  text-align: center;
+}
+.lang{
+  text-align: center;
+}
+table,
+ th,td, tr{
+  border: 1px solid black;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.t{
+  width: 100%;
+  }
+/*Foreign language end*/
+
+
+/*Historic places*/
+
+
+.musePic{
+float: right;
+margin: auto;
+}
+.castlePic{
+  float:left;
+  margin: auto;
+  padding-right: 5px;
+
+}
+.streetPic{
+float:right;
+margin: auto;
+}
+/*Historic places end*/
+@media (max-width: 320px){
+  .containerAll {
+    display: flex;
+    flex-direction: column;
+  }
+  .hisplace{
+    display:block;
+  }
+  .musPic img{
+    float: right;
+  }
+}
+    </style>
 
 </head>
 <body>
     <div class="containerAll">
         <!--header-->
         <div class="row containerMe">
+            <div class="col-2 ope"></div>
             <div class="col-4 fullName">
                 <h1>Owethu Sotomela</h1>
             </div>
-
-
-            <div class="col-8 myProfile">
+            <div class="col-4 myProfile">
                 <img src="Images/Table Mountain.jpg" alt="myimage with Table Mountain" width=200px lenght=>
             </div>
+            <div class="col-2 open"></div>
         </div>
 
 
@@ -35,10 +120,10 @@
                 <h2>Which City</h2>
             </div>
             <div class="cityTI">
-                <div class="col-6 cityImage">
+                <div class="col-3 cityImage">
                     <img src="Images/NYC1.jpeg" alt="city image" width=200px; class="img1">
                 </div>
-                <div class="col-6 cText">
+                <div class="col-9 cText">
                     <p> I would love to visit <b>New York</b> because it's a place where brains and
                         bodies in indecent proximity to one
                         another create the sparks of genius, invention, progress.
