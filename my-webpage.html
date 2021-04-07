@@ -5,212 +5,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>Document</title>
     <style>
-        *{
-    margin: 0; 
-    padding: 0;
+        * {
+            margin: 0;
+            padding: 0;
         }
-.containerAll{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightseagreen;
-}
-h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
+        .cAll {
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            background-color: lightseagreen;
+        }
 
-/**header***/
-.containerMe{
-    padding-top: 10px;
-    padding-bottom:10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-.myProfile{
-    padding: 10px 10px;
-    flex-basis: 20%;
-  }
-/****header end****/
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            padding-top: 60px;
+        }
 
+        h2 {
+            text-align: left;
+            padding-bottom: 20px;
+        }
 
-/****city****/
-.containerCity{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  }
-.cityName{
-  padding-bottom: 20px;
-  text-align: left;
-  } 
-.cityTI{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: flex-end;
-}
-.cityImage{
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  }
-/****city end****/
+        h3 {
+            text-align: center;
+        }
 
+        /*TM*/
 
-/****foreign language****/
-.containerFL{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.language{
-  text-align: left;
-  padding-bottom: 20px;
-}
-.lang{
-  text-align: center;
-  padding: 20px;
-}
- table,
- th,td, tr{
-  border: 1px solid black;
-  text-align: left;
-  border-collapse: collapse;
-}
-table.t{
-  width: 100%;
-  }
-/****foreign language end****/
+        .cMe {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
 
+        .mePic {
+            padding-left: 20px;
+        }
 
-/****historic places****/
+        /*TM end*/
 
-.containerHP{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
- 
-}
-.hist{
-  text-align: left;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-.hisPlace{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
+        /*City*/
+        .cCity {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
 
-.place1{
-  display: flex;
-  padding-left: 10px;
-}
-.castlePic{
-  display: flex;
-}
-.musePic{
-  display: flex;;
-}
-.streetPic{
-  display: flex;
-}
-h3{
-  text-align: center;
-}
+        /*city end*/
 
-@media (max-width: 320px){
-    .containerMe {
-      display: flex;
-      flex-direction: column;
-    }
-    .cityTI {
-      flex-direction: column;
-    }
-    .hisPlace{
-      display: flex;
-      flex-direction:column;
-    }
-    .castlePic{
-      display: flex; 
-      flex-direction:column-reverse;
-    }
-    .musePic{
-      display: flex;
-      flex-direction: column;
-    }
-    .streetPic{
-      display: flex;
-      width: 50%;
-    }
-  }
-/****historic places end****/
+        /*flang*/
+        .fLanguage {
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .forLang {
+            padding-bottom: 20px;
+        }
+
+        table,
+        th,
+        td,
+        tr {
+            border: 1px solid black;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        table.t {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        /*flang end*/
+
+        /*hist*/
+
+        .cPic {
+            padding-right: 5px;
+            float: right;
+        }
+
+        .iPic {
+            padding-right: 5px;
+            float: right;
+        }
+
+        .lsPic {
+            padding-right: 5px;
+            float: right;
+        }
+
+        .hisTory {
+            display: flex;
+        }
+
+        /*hist end*/
+        @media (max-width: 425px) {
+            .cMe {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cCity {
+                flex-direction: column;
+            }
+
+            .hisTory {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cPic {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .iPic {
+                display: flex;
+                flex-direction: column;
+                float: left;
+            }
+
+            .lsPic {
+                display: flex;
+                width: 50%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="containerAll">
-        <!--header-->
-        <div class="containerMe">
-            <div class="fullName">
-                <h1>Owethu Sotomela</h1>
-            </div>
-
-
-            <div class="myProfile">
-                <img src="Images/Table Mountain.jpg" alt="myimage with Table Mountain" width=200px lenght=>
-            </div>
+    <div class="cAll">
+        <div class="cMe">
+            <h1>Owethu Sotomela</h1>
+            <img src="./Images/Table Mountain.jpg" class="mePic" width="150px" height="150px">
         </div>
 
-
-
-        <!--header end-->
-
-        <!--city-->
-
-        <div class="containerCity">
-
-            <div class="cityName">
-                <h2>Which City</h2>
-            </div>
-            <div class="cityTI">
-                <div class="cityImage">
-                    <img src="Images/NYC1.jpeg" alt="cityimage" width=200px; class="img1">
-                </div>
-                <div class="cText">
-                    <p> I would love to visit <b>New York</b> because it's a place where brains and
-                        bodies in indecent proximity to one
-                        another create the sparks of genius, invention, progress.
-                        New York City is the greenest city in America. The 843-acre
-                        Central Park, the most famous park in the city, is actually
-                        only the 5th largest. Jog, walk, bike, in-line skate, horseback ride,
-                        ice skate, rent row boats, play basketball, softball, soccer, tennis,
-                        enjoy special events and festivals in the city’s 1,700 parks and playgrounds,
-                        or just kick back and people-watch.</p>
-                </div>
-            </div>
-      </div>
-        <!--city end-->
-
-        <!----foreign language-->
-
-        <div class="containerFL">
-            <div class="lang">
-                <div class="language">
-                    <h2>Foreign Language</h2>
-                </div>
-                <p> I would love learn <b>Portuguese</b> because it is the sixth widely
+        <h2>Which City</h2>
+        <div class="cCity">
+            <img src="./Images/NYC1.jpeg" class="cName" width="150px" height="150px">
+            <p>I would love to visit <b>New York</b> because it's a place where brains and
+                bodies in indecent proximity to one
+                another create the sparks of genius, invention, progress.
+                New York City is the greenest city in America. The 843-acre
+                Central Park, the most famous park in the city, is actually
+                only the 5th largest. Jog, walk, bike, in-line skate, horseback ride,
+                ice skate, rent row boats, play basketball, softball, soccer, tennis,
+                enjoy special events and festivals in the city’s 1,700 parks and playgrounds,
+                or just kick back and people-watch.
+            </p>
+        </div>
+        <div class="fLanguage">
+            <div class="forLang">
+                <h2>Foreign Language</h2>
+                <p>I would love learn <b>Portuguese</b> because it is the sixth widely
                     spoken language in the world, it is the official language in eight
                     countries and there is a swelling demand for
                     Portuguese Language Experts in various sectors
@@ -244,87 +201,47 @@ h3{
                 </table>
             </div>
         </div>
+        <h2>Historic Places</h2>
+        <div class="hisTory">
+            <div class="castleD">
+                <h3>Castle Of Good Hope</h3>
+                <img src="./Images/Castle.jpg" class="cPic" width="150px" height="150px">
+                <p>The castle was built by soldiers,
+                    volunteers, slaves and Khoi undergoing punishment.
+                    The building housed everything, bakery,
+                    and living quarters to various workshops, shops and prison cells.
+                    The castle was never attacked.
+                    In 1936 The Castle Of Good Hope was
+                    declared a national monument.
+                </p>
 
-
-        <!----foreign language end-->
-
-        <!--Historic Places-->
-
-        <div class="containerHP">
-            <div class="hist">
-                <h2>Historic Places</h2>
             </div>
-            <div class="hisPlace">
+            <div class="iziko">
+                <h3>Iziko Museum</h3>
+                <img src="./Images/Iziko.jpg" class="iPic" width="150px" height="150px">
+                <p>The houses african zoology, palentology
+                    and archneology colections.
+                    As a general museum comprising natural history
+                    and material culture from local and other groups further afield.
+                    It is a traditional centre of the home where
+                    families would get together to share their stories.
+                </p>
+            </div>
 
-                <div class="hope">
-                    <div class="place1">
-
-                        <div class="gHope">
-                            <p>
-                            <h3>Castle Of Good Hope</h3>
-                            The castle was built by soldiers,
-                            volunteers, slaves and Khoi undergoing punishment.
-                            The building housed everything, bakery,
-                            and living quarters to various workshops, shops and prison cells.
-                            The castle was never attacked.
-                            In 1936 The Castle Of Good Hope was
-                            declared a national monument.</p>
-                        </div>
-
-                        <div class="castlePic"> <img src="Images/Castle.jpg" class="castlePic"
-                                alt="My image at Castle of Good Hope" width=200px height="200px">
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="iziko">
-                    <div class="place1">
-                        <div class="iMuse">
-                            <h3>Iziko Museum</h3>
-                            <p>The houses african zoology, palentology
-                                and archneology colections.
-                                As a general museum comprising natural history
-                                and material culture from local and other groups further afield.
-                                Is a traditional centre of the home where
-                                families would get together to share their stories.</p>
-                        </div>
-
-
-                        <div class="musePic">
-                            <img src="Images/Iziko.jpg" class="musePic"
-                                alt="My image at Iziko Museum" width=200px height="200px">
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="long">
-
-                    <div class="place1">
-                        <div class="lStreet">
-                            <p>
-                            <h3>Long Street</h3>
-                            Architecturally it is known for it's Victorian
-                            buildings with wroght iron balconies.
-                            Is a major street in the City Bowl
-                            section of Cape Town, South Africa.
-                            It has a number of hastles which provide
-                            accomodation to an international rooster of guests.</p>
-                        </div>
-                        <div class="streetPic"> <img src="Images/Long Street.jpg" class="streetPic"
-                                alt="Long street pic" width=200px height="200px">
-                        </div>
-                    </div>
-                </div>
+            <div class="long">
+                <h3>Long Street</h3>
+                <img src="./Images/Long Street.jpg" class="lsPic" width="150px" height="150px">
+                <p>Architecturally it is known for it's Victorian
+                    buildings with wroght iron balconies.
+                    Is a major street in the City Bowl
+                    section of Cape Town, South Africa.
+                    It has a number of hastles which provide
+                    accomodation to an international rooster of guests.
+                </p>
             </div>
         </div>
     </div>
-    <!--Historic Places end-->
-    </div>
-</body>
+
 
 </body>
 
