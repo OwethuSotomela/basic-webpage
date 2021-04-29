@@ -19,6 +19,11 @@
             margin: 0px;
             /*width: 100%;*/
         }
+        .buttons{
+            padding-left: 600px;
+            padding-top: 150px;
+            display: flex;
+        }
         h1{
                 font-family:'Times New Roman', Times, serif;
                 color:black;
@@ -34,12 +39,10 @@
             background-color: transparent;
             text-decoration:rgba(red, green, blue, alpha);
         }
-        .fill{
-            background-color: aqua;
-        }
+        
         body{
             background-color: aqua;
-            background-image: url('./Images/WallPaper.jpg');
+            background-image: url('./Images/paw.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -55,8 +58,16 @@
 <body>
     <div class="contAll">
         <h1>Welcome to my page</h1>
-         <b><div class="basic"> <a href="./my-webpage.html">Basic Webpage</a></div></b>
-         <b><div class="grid"> <a href="./my-webpage-grid.html">Simple-grid</a></div></b>    
+    </div>
+    <div class="buttons">
+        <form action="./my-webpage.html">
+            <input type="submit" value="Basic Website">
+        </form>
+        <form action="./my-webpage-grid.html">
+            <input type="submit" value="Simple-Grid Website">
+        </form>
+         <!-- <b><div class="basic"> <a href="./my-webpage.html">Basic Webpage</a></div></b>
+         <b><div class="grid"> <a href="./my-webpage-grid.html">Simple-grid</a></div></b>     -->
     </div>
 </body>
 </html>
