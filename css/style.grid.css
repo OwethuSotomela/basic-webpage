@@ -1,4 +1,4 @@
-/**
+/* /* *
 *** SIMPLE GRID
 *** (C) ZACH COLE 2016
 **/
@@ -182,13 +182,13 @@ p {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
+@media only screen and (min-width: 33.75em) {  
   .container {
     width: 80%;
   }
 }
 
-@media only screen and (min-width: 45em) {  /* 720px */
+@media only screen and (min-width: 45em) {  
   .col-1 {
     width: 4.33%;
   }
@@ -242,9 +242,104 @@ p {
   }
 }
 
-@media only screen and (min-width: 60em) { /* 960px */
+@media only screen and (min-width: 60em) { 
   .container {
     width: 75%;
     max-width: 60rem;
   }
+}  
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+/****Container all***/
+.containerAll{
+font-family: arial;
+height: auto;
+width: auto;
+border: 3px solid blue;
+}
+h1{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
+}
+/*containerAll end*/
+
+/*containerMe*/
+.containerMe{
+text-align: center;
+}
+/*containerMe end*/
+
+
+/*City*/
+.containerCity{
+display: block;
+}
+.img1{
+padding-top: 20px;
+}
+/*City end*/
+
+
+/*Foreign language*/
+.language{
+text-align: center;
+}
+.lang{
+text-align: center;
+}
+table,
+th,td, tr{
+border: 1px solid black;
+text-align: left;
+border-collapse: collapse;
+}
+table.t{
+width: 100%;
+}
+/*Foreign language end*/
+
+
+/*Historic places*/
+
+
+.musePic{
+float: right;
+margin: auto;
+}
+.castlePic{
+float:left;
+margin: auto;
+padding-right: 5px;
+
+}
+.streetPic{
+float:right;
+margin: auto;
+}
+body{
+background-image: url(./Images/ann.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+@media (max-width: 320px){
+.containerAll {
+display: flex;
+flex-direction: column;
+}
+.hisplace{
+display:block;
+}
+.img{
+float: right;
+}
 }

@@ -1,0 +1,24 @@
+.contAll {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0px;
+}
+
+.buttons {
+    display: flex;
+    border-radius: 15px;
+    margin-left: 44em;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+body {
+    background-image: url('../Images/museum3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 15em;
+}

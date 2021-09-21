@@ -6,164 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .cAll {
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-            /* background-color: lightseagreen; */
-        }
-
-        h1 {
-            font-family: 'Times New Roman', Times, serif;
-            padding-top: 60px;
-        }
-
-        h2 {
-            text-align: left;
-            padding-bottom: 20px;
-        }
-
-        h3 {
-            text-align: center;
-        }
-
-        /*TM*/
-
-        .cMe {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding-bottom: 10px;
-        }
-
-        .mePic {
-            padding-left: 20px;
-        }
-
-        /*TM end*/
-
-        /*City*/
-        .cCity {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 20px;
-        }
-
-        /*city end*/
-
-        /*flang*/
-        .fLanguage {
-            padding-bottom: 20px;
-            text-align: center;
-        }
-
-        .forLang {
-            padding-bottom: 20px;
-        }
-
-        table,
-        th,
-        td,
-        tr {
-            border: 1px solid black;
-            text-align: left;
-            border-collapse: collapse;
-        }
-
-        table.t {
-            width: 100%;
-            padding-bottom: 20px;
-        }
-
-        /*flang end*/
-
-        /*hist*/
-
-        .cPic {
-            padding-right: 5px;
-            float: right;
-        }
-
-        .iPic {
-            padding-right: 5px;
-            float: right;
-        }
-
-        .lsPic {
-            padding-right: 5px;
-            float: right;
-        }
-
-        .hisTory {
-            display: flex;
-        }
-        body{
-            background-image: url(./Images/ann.jpg);
-            background-attachment: fixed;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        /*hist end*/
-        @media (max-width: 425px) {
-            .cMe {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .cCity {
-                flex-direction: column;
-            }
-
-            .hisTory {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .cPic {
-                display: flex;
-                flex-direction: column-reverse;
-            }
-
-            .iPic {
-                display: flex;
-                flex-direction: column;
-                float: left;
-            }
-
-            .lsPic {
-                display: flex;
-                width: 50%;
-            }
-            body{
-                background-image: url(./Images/Wallpaper1.jpeg);
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../css/style.basic.css">
 </head>
 
 <body>
     <div class="cAll">
         <div class="cMe">
             <h1>Owethu Sotomela</h1>
-            <img src="./Images/Table Mountain.jpg" class="mePic" width="150px" height="150px">
+            <img src="../Images/Table Mountain.jpg" class="mePic" width="150px" height="150px">
         </div>
 
         <h2>Which City</h2>
         <div class="cCity">
-            <img src="./Images/NYC1.jpeg" class="cName" width="150px" height="150px">
+            <img src="../Images/NYC1.jpeg" class="cName" width="150px" height="150px">
             <p>I would love to visit <b>New York</b> because it's a place where brains and
                 bodies in indecent proximity to one
                 another create the sparks of genius, invention, progress.
@@ -216,7 +71,7 @@
         <div class="hisTory">
             <div class="castleD">
                 <h3>Castle Of Good Hope</h3>
-                <img src="./Images/Castle.jpg" class="cPic" width="150px" height="150px">
+                <img src="../Images/Castle.jpg" class="cPic" width="150px" height="150px">
                 <p>The castle was built by soldiers,
                     volunteers, slaves and Khoi undergoing punishment.
                     The building housed everything, bakery,
@@ -229,7 +84,7 @@
             </div>
             <div class="iziko">
                 <h3>Iziko Museum</h3>
-                <img src="./Images/Iziko.jpg" class="iPic" width="150px" height="150px">
+                <img src="../Images/Iziko.jpg" class="iPic" width="150px" height="150px">
                 <p>The houses african zoology, palentology
                     and archneology colections.
                     As a general museum comprising natural history
@@ -241,7 +96,7 @@
 
             <div class="long">
                 <h3>Long Street</h3>
-                <img src="./Images/Long Street.jpg" class="lsPic" width="150px" height="150px">
+                <img src="../Images/Long Street.jpg" class="lsPic" width="150px" height="150px">
                 <p>Architecturally it is known for it's Victorian
                     buildings with wroght iron balconies.
                     Is a major street in the City Bowl
@@ -250,6 +105,14 @@
                     accomodation to an international rooster of guests.
                 </p>
             </div>
+        </div>
+        <div class="buttons">
+            <form action="../index.html">
+                <input type="submit" value="Home"> 
+            </form>
+            <form action="../grid/my-webpage-grid.html">
+                <input type="submit" value="Simple Grid">
+            </form>
         </div>
     </div>
 
