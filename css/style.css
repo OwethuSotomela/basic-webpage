@@ -31,7 +31,7 @@ body {
     min-height:95vh;
 }
 input{
-    width:10em;
+    width:12em;
     height: 2em;
     border: 2px solid orangered;
     border-radius: 15px;
