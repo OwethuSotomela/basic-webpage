@@ -8,7 +8,9 @@
             padding-left: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
-            border: 3px solid brown;
+            border: 3px solid orangered;
+            background-color: white;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
 
         h1 {
@@ -98,12 +100,12 @@
         .hisTory {
             display: flex;
         }
-        body{
+        /* body{
             background-image: url(./Images/ann.jpg);
             background-attachment: fixed;
             background-size: cover;
             background-repeat: no-repeat;
-        }
+        } */
 
         /*hist end*/
         @media (max-width: 425px) {
@@ -150,6 +152,13 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 3em;
+    margin-bottom: 2em;
+}
+input{
+    width:10em;
+    height: 2em;
+    border: 2px solid orangered;
+    border-radius: 15px;
 }
 /****Container all***/
 .containerAll{
